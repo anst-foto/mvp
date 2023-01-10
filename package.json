@@ -17,6 +17,9 @@
     "Andy Brewer",
     "Starinin Anrey"
   ],
+  "contributors": [
+    "reckek <iskra23231@gmail.com>"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/anst-foto/mvp/issues"

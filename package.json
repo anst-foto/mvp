@@ -2,6 +2,9 @@
   "name": "mvp.less",
   "version": "1.0",
   "description": "A minimalist stylesheet (LESS) for HTML elements",
+  "scripts": {
+    "less": "npx lessc dist/mvp.less dist/mvp.css"
+  },
   "main": "mvp.less",
   "repository": {
     "type": "git",
@@ -13,9 +16,15 @@
     "stylesheet",
     "mvp"
   ],
-  "authors": ["Andy Brewer", "Starinin Anrey"],
+  "authors": [
+    "Andy Brewer",
+    "Starinin Anrey"
+  ],
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/anst-foto/mvp/issues"
+  },
+  "devDependencies": {
+    "less": "^4.1.3"
   }
 }

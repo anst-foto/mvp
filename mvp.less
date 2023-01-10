@@ -2,16 +2,16 @@
 
 /* Layout */
 article aside {
-  background: var(--color-secondary-accent);
-  border-left: 4px solid var(--color-secondary);
+  background: @color-secondary-accent;
+  border-left: 4px solid @color-secondary;
   padding: 0.01rem 0.8rem;
 }
 
 body {
-  background: var(--color-bg);
-  color: var(--color-text);
-  font-family: var(--font-family);
-  line-height: var(--line-height);
+  background: @color-bg;
+  color: @color-text;
+  font-family: @font-family;
+  line-height: @line-height;
   margin: 0;
   overflow-x: hidden;
   padding: 0;
@@ -21,12 +21,12 @@ footer,
 header,
 main {
   margin: 0 auto;
-  max-width: var(--width-content);
+  max-width: @width-content;
   padding: 3rem 1rem;
 }
 
 hr {
-  background-color: var(--color-bg-secondary);
+  background-color: @color-bg-secondary;
   border: none;
   height: 1px;
   margin: 4rem 0;
@@ -36,23 +36,23 @@ hr {
 section {
   display: flex;
   flex-wrap: wrap;
-  justify-content: var(--justify-important);
+  justify-content: @justify-important;
 
   pre {
     overflow: auto;
   }
 
   aside {
-    border: 1px solid var(--color-bg-secondary);
-    border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow) var(--color-shadow);
+    border: 1px solid @color-bg-secondary;
+    border-radius: @border-radius;
+    box-shadow: @box-shadow @color-shadow;
     margin: 1rem;
     padding: 1.25rem;
-    width: var(--width-card);
+    width: @width-card;
   }
 
   aside:hover {
-    box-shadow: var(--box-shadow) var(--color-bg-secondary);
+    box-shadow: @box-shadow @color-bg-secondary;
   }
 }
 
@@ -73,7 +73,7 @@ main header {
 }
 
 header {
-  text-align: var(--justify-important);
+  text-align: @justify-important;
 
   a {
     b,
@@ -119,10 +119,10 @@ nav {
       }
 
       ul {
-        background: var(--color-bg);
-        border: 1px solid var(--color-bg-secondary);
-        border-radius: var(--border-radius);
-        box-shadow: var(--box-shadow) var(--color-shadow);
+        background: @color-bg;
+        border: 1px solid @color-bg-secondary;
+        border-radius: @border-radius;
+        box-shadow: @box-shadow @color-shadow;
         display: none;
         height: auto;
         left: -2px;
@@ -159,14 +159,14 @@ h3,
 h4,
 h5,
 h6 {
-  line-height: var(--line-height);
+  line-height: @line-height;
 }
 
 code,
 samp {
-  background-color: var(--color-accent);
-  border-radius: var(--border-radius);
-  color: var(--color-text);
+  background-color: @color-accent;
+  border-radius: @border-radius;
+  color: @color-text;
   display: inline-block;
   margin: 0 0.1rem;
   padding: 0 0.5rem;
@@ -198,27 +198,27 @@ p {
 
 pre {
   margin: 1rem 0;
-  max-width: var(--width-card-wide);
+  max-width: @width-card-wide;
   padding: 1rem 0;
-  tab-size: var(--tab-size);
+  tab-size: @tab-size;
 
   code,
   samp {
     display: block;
-    max-width: var(--width-card-wide);
+    max-width: @width-card-wide;
     padding: 0.5rem 2rem;
     white-space: pre-wrap;
   }
 }
 
 small {
-  color: var(--color-text-secondary);
+  color: @color-text-secondary;
 }
 
 sup {
-  background-color: var(--color-secondary);
-  border-radius: var(--border-radius);
-  color: var(--color-bg);
+  background-color: @color-secondary;
+  border-radius: @border-radius;
+  color: @color-bg;
   font-size: xx-small;
   font-weight: bold;
   margin: 0.2rem;
@@ -229,18 +229,18 @@ sup {
 
 /* Links */
 a {
-  color: var(--color-link);
+  color: @color-link;
   display: inline-block;
   font-weight: bold;
   text-decoration: none;
 
   &:active {
-    filter: brightness(var(--active-brightness));
+    filter: brightness(@active-brightness);
     text-decoration: underline;
   }
 
   &:hover {
-    filter: brightness(var(--hover-brightness));
+    filter: brightness(@hover-brightness);
     text-decoration: underline;
   }
 }
@@ -251,26 +251,26 @@ a i,
 a strong,
 button,
 input[type="submit"] {
-  border-radius: var(--border-radius);
+  border-radius: @border-radius;
   display: inline-block;
   font-size: medium;
   font-weight: bold;
-  line-height: var(--line-height);
+  line-height: @line-height;
   margin: 0.5rem 0;
   padding: 1rem 2rem;
 }
 
 button,
 input[type="submit"] {
-  font-family: var(--font-family);
+  font-family: @font-family;
 
   &:active {
-    filter: brightness(var(--active-brightness));
+    filter: brightness(@active-brightness);
   }
 
   &:hover {
     cursor: pointer;
-    filter: brightness(var(--hover-brightness));
+    filter: brightness(@hover-brightness);
   }
 }
 
@@ -279,23 +279,23 @@ a {
   strong,
   button,
   input[type="submit"] {
-    background-color: var(--color-link);
-    border: 2px solid var(--color-link);
-    color: var(--color-bg);
+    background-color: @color-link;
+    border: 2px solid @color-link;
+    color: @color-bg;
   }
 
   em,
   i {
-    border: 2px solid var(--color-link);
-    border-radius: var(--border-radius);
-    color: var(--color-link);
+    border: 2px solid @color-link;
+    border-radius: @border-radius;
+    color: @color-link;
     display: inline-block;
     padding: 1rem 2rem;
   }
 }
 
 article aside a {
-  color: var(--color-secondary);
+  color: @color-secondary;
 }
 
 /* Images */
@@ -308,16 +308,16 @@ figure {
   }
 
   figcaption {
-    color: var(--color-text-secondary);
+    color: @color-text-secondary;
   }
 }
 
 /* Forms */
 button:disabled,
 input:disabled {
-  background: var(--color-bg-secondary);
-  border-color: var(--color-bg-secondary);
-  color: var(--color-text-secondary);
+  background: @color-bg-secondary;
+  border-color: @color-bg-secondary;
+  color: @color-text-secondary;
   cursor: not-allowed;
 }
 
@@ -327,14 +327,14 @@ input[type="submit"][disabled]:hover {
 }
 
 form {
-  border: 1px solid var(--color-bg-secondary);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow) var(--color-shadow);
+  border: 1px solid @color-bg-secondary;
+  border-radius: @border-radius;
+  box-shadow: @box-shadow @color-shadow;
   display: block;
-  max-width: var(--width-card-wide);
-  min-width: var(--width-card);
+  max-width: @width-card-wide;
+  min-width: @width-card;
   padding: 1.5rem;
-  text-align: var(--justify-normal);
+  text-align: @justify-normal;
 
   header {
     margin: 1.5rem 0;
@@ -348,7 +348,7 @@ select,
 textarea {
   display: block;
   font-size: inherit;
-  max-width: var(--width-card-wide);
+  max-width: @width-card-wide;
 }
 
 input[type="checkbox"],
@@ -370,8 +370,8 @@ input[type="range"] {
 input,
 select,
 textarea {
-  border: 1px solid var(--color-bg-secondary);
-  border-radius: var(--border-radius);
+  border: 1px solid @color-bg-secondary;
+  border-radius: @border-radius;
   margin-bottom: 1rem;
   padding: 0.4rem 0.8rem;
 }
@@ -383,7 +383,7 @@ textarea {
 
 input[readonly],
 textarea[readonly] {
-  background-color: var(--color-bg-secondary);
+  background-color: @color-bg-secondary;
 }
 
 label {
@@ -393,9 +393,9 @@ label {
 
 /* Popups */
 dialog {
-  border: 1px solid var(--color-bg-secondary);
-  border-radius: var(--border-radius);
-  box-shadow: var(--box-shadow) var(--color-shadow);
+  border: 1px solid @color-bg-secondary;
+  border-radius: @border-radius;
+  box-shadow: @box-shadow @color-shadow;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -406,8 +406,8 @@ dialog {
 
 /* Tables */
 table {
-  border: 1px solid var(--color-bg-secondary);
-  border-radius: var(--border-radius);
+  border: 1px solid @color-bg-secondary;
+  border-radius: @border-radius;
   border-spacing: 0;
   display: inline-block;
   max-width: 100%;
@@ -421,35 +421,35 @@ table {
   th,
   tr {
     padding: 0.4rem 0.8rem;
-    text-align: var(--justify-important);
+    text-align: @justify-important;
   }
 
   thead {
-    background-color: var(--color-table);
+    background-color: @color-table;
     border-collapse: collapse;
-    border-radius: var(--border-radius);
-    color: var(--color-bg);
+    border-radius: @border-radius;
+    color: @color-bg;
     margin: 0;
     padding: 0;
 
     th {
       &:first-child {
-        border-top-left-radius: var(--border-radius);
+        border-top-left-radius: @border-radius;
       }
 
       &:last-child {
-        border-top-right-radius: var(--border-radius);
+        border-top-right-radius: @border-radius;
       }
     }
 
     thead th:first-child,
     tr td:first-child {
-      text-align: var(--justify-normal);
+      text-align: @justify-normal;
     }
   }
 
   tr:nth-child(even) {
-    background-color: var(--color-accent);
+    background-color: @color-accent;
   }
 }
 
@@ -457,17 +457,17 @@ table {
 blockquote {
   display: block;
   font-size: x-large;
-  line-height: var(--line-height);
+  line-height: @line-height;
   margin: 1rem auto;
-  max-width: var(--width-card-medium);
+  max-width: @width-card-medium;
   padding: 1.5rem 1rem;
-  text-align: var(--justify-important);
+  text-align: @justify-important;
 
   footer {
-    color: var(--color-text-secondary);
+    color: @color-text-secondary;
     display: block;
     font-size: small;
-    line-height: var(--line-height);
+    line-height: @line-height;
     padding: 1.5rem 0;
   }
 }

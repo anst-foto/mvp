@@ -2,9 +2,6 @@
   "name": "mvp.less",
   "version": "1.0",
   "description": "A minimalist stylesheet (LESS) for HTML elements",
-  "scripts": {
-    "less": "npx lessc dist/mvp.less dist/mvp.css"
-  },
   "main": "mvp.less",
   "repository": {
     "type": "git",
